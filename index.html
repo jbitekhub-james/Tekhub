@@ -210,6 +210,22 @@
     transform: translateY(-2px);
   }
 
+  .btn-messenger {
+    padding: 16px 36px; font-family: 'Orbitron', sans-serif;
+    font-size: .85rem; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; text-decoration: none; color: #fff;
+    background: linear-gradient(135deg, #00B2FF 0%, #006FFF 50%, #A033FF 100%);
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: 0 0 20px rgba(0,140,255,.45);
+    clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+    transition: all .3s;
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .btn-messenger:hover {
+    box-shadow: 0 0 40px rgba(0,140,255,.7), 0 0 80px rgba(160,51,255,.4);
+    transform: translateY(-2px);
+  }
+
   /* scroll indicator */
   .scroll-hint {
     position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
@@ -592,8 +608,14 @@
   <p class="hero-tagline">Your Tech. <em>Our Expertise.</em> Your Success.</p>
 
   <div class="hero-buttons">
-    <a href="#booking" class="btn-primary">Book a Session</a>
+    <a href="#booking" class="btn-primary">Book a Service</a>
     <a href="#services" class="btn-secondary">Explore Services</a>
+    <a href="https://m.me/102840107971580" target="_blank" rel="noopener" class="btn-messenger" aria-label="Message us on Facebook Messenger">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.9 1.434 5.482 3.69 7.16V22l3.37-1.85c.9.249 1.86.383 2.94.383 5.523 0 10-4.145 10-9.243C22 6.145 17.523 2 12 2zm1.005 12.45l-2.553-2.726-4.985 2.726 5.484-5.825 2.616 2.726 4.92-2.726-5.482 5.825z"/>
+      </svg>
+      Message Us
+    </a>
   </div>
 
   <div class="scroll-hint">
@@ -685,7 +707,7 @@
   <div class="booking-inner">
     <div class="booking-info">
       <p class="section-label">// Schedule a Visit</p>
-      <h2 class="section-title">Book a Session</h2>
+      <h2 class="section-title">Book a Service</h2>
       <p class="section-desc">Get expert tech support on your schedule. Walk-ins welcome, but appointments get priority service.</p>
 
       <div class="booking-detail" style="margin-top:36px">
